@@ -1,0 +1,79 @@
+.port{
+    background-image:url("/image/web7.jpg");
+    /* height: 500px;  */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .jumbo{
+    background: gray url(https://cdn.dribbble.com/users/42840/screenshots/2996848/attachments/625637/geometry5.png) repeat 0 0;
+    background-size: cover;
+    height: 100vh;
+    animation: example 15s infinite linear .5s;
+    animation-fill-mode: forwards;
+}
+.jumbo:hover{
+   background-position: -180px 50px;
+}
+@keyframes example{
+    from {background-position: 0 0;}
+        to {background-position: -400px 0px;}
+}
+ .sev{
+  background-color: transparent;
+   height: 85vh; 
+   box-shadow: 1px -1px 16px 2px #afaa9f;
+  }
+  @media (max-width: 768px) {
+    .sev{
+      height: 130vh; 
+    }
+  }
+ .services{
+   margin-top: 50px;
+   font-size: 70px;
+ }
+ .card{
+  position: relative;
+ }
+ .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: transparent;
+}
+.card:hover img {
+  opacity: 0.5;
+}
+
+ .card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+ .main-footer{
+       background-color: black;
+       height: 10vh;
+   }
+ .footer{
+   margin-left: 300px;
+ }
+ @media (max-width: 768px) {
+  .footer{
+    margin-left: 1px;
+  }
+}
